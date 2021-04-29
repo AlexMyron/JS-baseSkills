@@ -1,0 +1,36 @@
+.bordered {
+  border: 1px solid teal;
+  box-shadow: 0 0 10px black;
+}
+
+a,
+button {
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-size: 2em;
+
+  border: 2px solid teal;
+  background-color: darkviolet;
+  color: white;
+  border-radius: 4px;
+}
+
+button {
+  background-color: dimgray;
+}
+
+h1 {
+  width: fit-content;
+  padding: 10px;
+}
+
+.dashed {
+  padding: 5px;
+  border: 2px dashed red;
+}
+
