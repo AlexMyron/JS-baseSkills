@@ -84,6 +84,54 @@ const vehicles = [
     { make: 'Ford', model: 'Explorer', type: 'suv', price: 31660 },
 ];
 
+// ------- String into a S-t-r-i-n-g
+
+// const splitAndMerge = (string, separator) => string.split(' ').map(elem => elem.split('').join(separator)).join(' ');
 
 
 
+// ------- Alien Language
+
+// const alienLanguage = str => {
+
+//     const a = str.toUpperCase().split(' ').map(elem => elem.split(''));
+
+//     for (const elem of a) {
+//         const b = elem[elem.length - 1].toLowerCase();
+//         const c = elem.length - 1;
+//         elem.splice(c, 1, b);
+//     }
+    
+//     return a.map(elem => elem.join('')).join(' ');
+// }
+// console.log(alienLanguage("My name is John")) //  "My NAMe Is JOHn";
+
+
+// ------- Reversed Words
+
+// const reverseWords = str => {
+
+//     const a = str.split(' ').map(elem => elem.split(''));
+//     a.map(elem => elem.reverse());    
+
+//     return a.map(elem => elem.join('')).join(' ');
+// }
+// console.log(reverseWords('double  spaced  words'))
+
+
+
+// -------- Полифил Object.entries()
+
+const objChange = obj => {
+    const objNew = [];
+    const keys = Object.keys(obj);
+    const values = Object.values(obj);
+
+    for (let i = 0; i < keys.length; i += 1){
+        const buff = [];
+        objNew.push([keys[i]])
+        objNew[i].push(values[i])
+    }
+
+    return objNew;
+}
